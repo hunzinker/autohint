@@ -1,7 +1,7 @@
 //
 // jQuery autoHint
 //
-// v0.1.0
+// v0.2.0
 // Ken Seal hunzinker@gmail.com
 // License: MIT
 
