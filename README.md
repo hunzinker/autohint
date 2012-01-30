@@ -26,7 +26,7 @@ Initialize autohint.
                   'disabled', 'disabled'
                 );
     
-                form.autoHint('removeHintsOnSubmit');
+                form.autoHint('removeHints');
             });
     
             // Reset form.
