@@ -22,8 +22,8 @@ describe("autoHint", function() {
     expect($('#name').val(input).blur().val()).toEqual(input);
   });
 
-  it("removes form hints on submit", function() {
-    $('form :input.auto-hint').autoHint('removeHintsOnSubmit');
+  it("removes form hints", function() {
+    $('form :input.auto-hint').autoHint('removeHints');
     expect($('#name').val()).toEqual('');
   });
 

@@ -60,8 +60,8 @@
       });     
     },
     
-    // Remove hints on submit.
-    removeHintsOnSubmit: function() {
+    // Remove hints.
+    removeHints: function() {
       return this.each(function() {
         var $this = $(this);
         if ($this.val() === $this.attr('title')) { 
