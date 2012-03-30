@@ -13,29 +13,29 @@ Ensure jquery.autohint.js and autohint.css are loaded in your document's `<head>
 
 Remember to load jquery.autohint.js *after* the main jQuery library.
 
-Initialize autohint. 
+Initialize autohint.
 
     <script type='text/javascript'>
         $(function() {
             var form = $('form :input.auto-hint');
             form.autoHint();
-     
+
             // Disable submit button and remove input values equal to attr title.
             $('form').submit(function() {
                 $('input[type=submit]', this).val('Processing...').attr(
                   'disabled', 'disabled'
                 );
-    
+
                 form.autoHint('removeHints');
             });
-    
+
             // Reset form.
             $('#reset_form').click(function() {
                 $('textarea').val('');
                 $('input:text').val('');
                 form.autoHint('addHints')
             });
-    
+
         });
     </script>
 
@@ -43,7 +43,7 @@ Initialize autohint.
 
     <%= form_for @blog do |f| %>
         <div>
-            <%= f.text_area :blog_text, 
+            <%= f.text_area :blog_text,
                 :title => "Start typing here...",
                 :class => "auto-hint" %>
         </div>
@@ -51,10 +51,10 @@ Initialize autohint.
             <%= f.text_field :author,
                 :title => "Enter your full name.",
                 :class => "auto-hint" %>
-        </div> 
+        </div>
         <div>
             <%= f.submit "Submit" %>&nbsp;&nbsp;
-            <%= submit_tag "Reset", :name => "reset", 
+            <%= submit_tag "Reset", :name => "reset",
                 :type => "button", :id => "reset_form" %>
         </div>
     <% end %>
@@ -65,4 +65,4 @@ Initialize autohint.
 
 ## License
 
-MIT License. 
+MIT License.
