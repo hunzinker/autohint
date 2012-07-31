@@ -1,4 +1,4 @@
-# autohint
+# autohint [![BuildStatus](https://secure.travis-ci.org/hunzinker/autohint.png?branch=master)](http://travis-ci.org/hunzinker/autohint)
 
 Add hints to form input fields.
 
